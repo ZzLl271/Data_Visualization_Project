@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn Air Quality Visualization</title>
+    <!-- Include Chart.js library for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <!-- Link to custom CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Brooklyn Air Quality Dashboard</h1>
+        <p>Visualizing pollutant trends in Brooklyn</p>
+    </header>
+
+    <main>
+        <section class="chart-container">
+            <h2>Pollutant Concentration Comparison (2019-2020)</h2>
+            <div class="chart-wrapper">
+                <!-- Canvas for horizontal bar chart -->
+                <canvas id="horizontalBarChart"></canvas>
+            </div>
+            <p class="chart-description">
+                This chart compares the average concentrations of PM2.5 and NO2 in Brooklyn between 2019 and 2020.
+            </p>
+        </section>
+
+        <section class="chart-container">
+            <h2>PM2.5 Seasonal Distribution (2020)</h2>
+            <div class="chart-wrapper">
+                <!-- Canvas for doughnut chart -->
+                <canvas id="doughnutChart"></canvas>
+            </div>
+            <p class="chart-description">
+                This doughnut chart shows the seasonal distribution of PM2.5 concentrations in 2020, highlighting the proportion of each season relative to the annual average.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data Source: NYC Open Data | Visualization: Zilong Li</p>
+    </footer>
+
+    <!-- Link to custom JavaScript script -->
+    <script src="script.js"></script>
+</body>
+</html>
